@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Groups</title>
+    
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Styling with Gradient Background */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #f0f2f5, #d0e4f7);
+            background-attachment: fixed; /* Keeps background fixed during scroll */
+            color: #333;
+        }
+
+        /* Header Styling with New Gradient Colors */
+        header {
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #7bcd47, #ff2147, #2affff);
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif; /* Apply custom Google Font */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin: 20px 0;
+            transition: transform 0.3s;
+            background-size: 200% 200%;
+            animation: gradientAnimation 5s ease infinite;
+            overflow: hidden;
+        }
+
+        /* Header Text Animation */
+        header span {
+            display: inline-block;
+            animation: textBounce 2s infinite alternate;
+        }
+
+        @keyframes textBounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-5px); }
+        }
+
+        /* Animation for Gradient Header */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Container for Tabs */
+        .tabs-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 15px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* Tab Styling */
+        .tab {
+            flex: 1 1 calc(50% - 15px); /* 2 tabs per row */
+            max-width: 500px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tab:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .tab img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .tab:hover img {
+            transform: scale(1.1);
+        }
+
+        .tab-title {
+            padding: 10px;
+            font-size: 18px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header><span>Telegram Groups</span></header>
+
+    <!-- Tabs Container -->
+    <div class="tabs-container">
+        
+        <!-- Tab 1 -->
+        <a href="page1.html" class="tab">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7RcxJTin3dMxDQcmiSR78r2-YwfXVs5seEYHEe6Vp9HGcnwF_Q2YXZg0&s=10" alt="Group 1">
+            <div class="tab-title">Group 1</div>
+        </a>
+        
+        <!-- Tab 2 -->
+        <a href="page2.html" class="tab">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7RcxJTin3dMxDQcmiSR78r2-YwfXVs5seEYHEe6Vp9HGcnwF_Q2YXZg0&s=10" alt="Group 2">
+            <div class="tab-title">Group 2</div>
+        </a>
+        
+        <!-- Tab 3 -->
+        <a href="page3.html" class="tab">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7RcxJTin3dMxDQcmiSR78r2-YwfXVs5seEYHEe6Vp9HGcnwF_Q2YXZg0&s=10" alt="Group 3">
+            <div class="tab-title">Group 3</div>
+        </a>
+        
+        <!-- Tab 4 -->
+        <a href="page4.html" class="tab">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7RcxJTin3dMxDQcmiSR78r2-YwfXVs5seEYHEe6Vp9HGcnwF_Q2YXZg0&s=10" alt="Group 4">
+            <div class="tab-title">Group 4</div>
+        </a>
+
+    </div>
+
+</body>
+</html>
