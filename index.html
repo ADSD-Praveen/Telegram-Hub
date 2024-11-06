@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,14 +31,23 @@
             color: #333;
             min-height: 100vh;
             padding: 0;
-            margin: 0; /* Removes gap at the top */
+            margin: 0;
+            /* Removes gap at the top */
         }
 
         /* Background Animation */
         @keyframes backgroundAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         /* Header Styling */
@@ -48,36 +58,50 @@
             color: white;
             text-align: center;
             font-size: 28px;
-			top:0;
-			z-index:1;
-	    	position: sticky;
+            top: 0;
+            z-index: 1;
+            position: sticky;
             font-weight: bold;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 0; /* Optional: Remove border-radius if header should be completely flat */
+            border-radius: 0;
+            /* Optional: Remove border-radius if header should be completely flat */
             background-size: 200% 200%;
             animation: gradientAnimation 5s ease infinite;
         }
 
         /* Header Text Animation */
         header span {
-	    font-style: italic;
+            font-style: italic;
             color: white;
             text-shadow: 0 3px black, 3px 0 black, 0 -3px black, -3px 0 black;
             font-family: verdana;
-	    	display: inline-block;
+            display: inline-block;
             animation: textBounce 2s infinite alternate;
         }
 
         @keyframes textBounce {
-            from { transform: translateY(0); }
-            to { transform: translateY(-5px); }
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-5px);
+            }
         }
 
         /* Animation for Gradient Header */
         @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         /* Container for Tabs */
@@ -92,7 +116,8 @@
 
         /* Tab Styling */
         .tab {
-            flex: 1 1 calc(25% - 15px); /* 2 tabs per row */
+            flex: 1 1 calc(25% - 15px);
+            /* 2 tabs per row */
             max-width: 300px;
             text-align: center;
             background-color: white;
@@ -102,6 +127,7 @@
             text-decoration: none;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .tab:hover {
             transform: scale(1.05);
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -122,39 +148,46 @@
             padding: 15px;
             font-size: 20px;
             color: black;
-	    	font-weight:bold;
+            font-weight: bold;
         }
-		footer {
+
+        footer {
             width: 100%;
             background-color: black;
             text-align: center;
             padding: 10px;
             margin-top: auto;
+            box-shadow: 0 -2px 4px white;
         }
-        footer span{
+
+        footer span {
             color: white;
             font-size: 15px;
             font-weight: bold;
             font-style: italic;
-			box-shadow: 0 -2px 4px white;
         }
-	@media screen and (max-width:1000px){
-	.tab {
-            flex: 1 1 calc(50% - 15px);
-	}
-	.tab img {
-	    height: 230px;
-	}
-	.tab-title {
-	    padding: 10px;
-		font-size: 15px;
-	}
-	footer {
-        font-size: 10px;
-    }
-	}
+
+        @media screen and (max-width:1000px) {
+            .tab {
+                flex: 1 1 calc(50% - 15px);
+            }
+
+            .tab img {
+                height: 230px;
+            }
+
+            .tab-title {
+                padding: 10px;
+                font-size: 15px;
+            }
+
+            footer {
+                font-size: 10px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -162,25 +195,25 @@
 
     <!-- Tabs Container -->
     <div class="tabs-container">
-        
+
         <!-- Tab 1 -->
         <a href="https://t.me/+Ig5kQfDzEnIwNDQ9" class="tab">
             <img src="images/mcu.jpeg" alt="Marvel Cinematic Universe (MCU)">
             <div class="tab-title">Marvel Cinematic Universe (MCU)</div>
         </a>
-        
+
         <!-- Tab 2 -->
         <a href="https://t.me/+KIiseLJUTO01ZmVl" class="tab">
             <img src="images/got.jpg" alt="Game Of Thrones Telugu">
             <div class="tab-title">Game Of Thrones Telugu</div>
         </a>
-        
+
         <!-- Tab 3 -->
         <a href="https://t.me/+hJE1JVYVfm43OWE1" class="tab">
             <img src="images/hanuman.jpg" alt="The Legend Of Hanuman Telugu">
             <div class="tab-title">The Legend Of Hanuman Telugu</div>
         </a>
-        
+
         <!-- Tab 4 -->
         <a href="" class="tab">
             <img src="images/soon.jpg" alt="Adding Soon...">
@@ -190,4 +223,5 @@
     </div>
     <footer><span>@ADSD_Praveen</span></footer>
 </body>
+
 </html>
